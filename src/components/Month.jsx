@@ -1,13 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+
 function Month(props){
+  const selections = props.selection;
+  const listItems = selections.map((item) =>
+    <li>{item}</li>
+  );
+
   return(
     <div>
       <h2>{props.name}</h2>
-      <ul>
-        <li>{props.selection}</li>
-      </ul>
+      <ul>{listItems}</ul>
     </div>
   );
 }
