@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 function TourDate(props) {
 
   return(
-    <div>
+    <div style={{marginLeft: '50px'}}>
       <h2>{props.day}</h2>
-      <ul>
+      <ul style={{listStyle: 'none'}}>
         <li>Location: {props.location}</li>
         <li>Hours: {props.hours}</li>
         <li>Booth: {props.booth}</li>

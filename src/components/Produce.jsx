@@ -271,9 +271,14 @@ const masterMonthlyProduce = [
 ];
 
 function Produce() {
+  const produceStyles = {
+    backgroundColor: '#fffafa',
+    width: '40%'
+  };
+
   return(
-    <div>
-      <h1>Produce</h1>
+    <div style={produceStyles}>
+      <h1 style={{textAlign: 'center'}}>Produce</h1>
       {masterMonthlyProduce.map((month, index) =>
         <Month name={month.name}
           selection={month.selection}

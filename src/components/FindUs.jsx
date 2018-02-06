@@ -41,9 +41,14 @@ const masterTourSchedule = [
 ];
 
 function FindUs(){
+  const findStyles = {
+    backgroundColor: '#fffafa',
+    width: '40%',
+
+  };
   return(
-    <div>
-      <h1>Find us</h1>
+    <div style={findStyles}>
+      <h1 style={{textAlign: 'center'}}>Find us</h1>
       {masterTourSchedule.map((date, index) =>
         <TourDate day={date.day}
           location={date.location}

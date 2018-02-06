@@ -4,14 +4,19 @@ import PropTypes from 'prop-types';
 
 function Month(props){
   const selections = props.selection;
-  const listItems = selections.map((item) =>
-    <li>{item}</li>
+  const listItems = selections.map((item, index) =>
+    <li key={index}>{item}</li>
   );
 
   return(
-    <div>
+    <div style={{marginLeft: '50px'}}>
       <h2>{props.name}</h2>
-      <ul>{listItems}</ul>
+      <ul className="hide"style={{listStyle: 'none'}}>{listItems}</ul>
+      <style jsx>{`
+        .hide{
+          display: none;
+        }
+      `}</style>
     </div>
   );
 }
