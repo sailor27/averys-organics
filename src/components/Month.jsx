@@ -11,11 +11,17 @@ function Month(props){
   return(
     <div style={{marginLeft: '50px'}}>
       <h2>{props.name}</h2>
-      <ul className="hide"style={{listStyle: 'none'}}>{listItems}</ul>
+      <ul className="hide"style={{listStyle: 'none', padding:'0px'}}>{listItems}</ul>
       <style jsx>{`
         .hide{
           display: none;
         }
+
+        h2:hover + ul, ul:hover{
+          display:block;
+          background-color: white;
+        }
+
       `}</style>
     </div>
   );

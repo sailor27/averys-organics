@@ -36,7 +36,7 @@ function App() {
     `}</style>
       <div className="container">
         <Header />
-        <div style={{display: 'flex',flexDirection: 'row', justifyContent: 'space-around'}}>
+        <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-around'}}>
           <FindUs style={{width: '350px'}} />
           <Produce style={{width: '350px'}} />
         </div>
