@@ -288,6 +288,7 @@ function Produce() {
           </div>
         )}
         <style jsx>{`
+          width: 100%;
 
         `}</style>
       </div>
