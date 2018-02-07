@@ -7,6 +7,12 @@ function App() {
   return (
     <div>
       <style jsx global>{`
+        h1:hover {
+          color: #EB6EBD;
+        }
+        h2:hover{
+          color: #008F59;
+        }
         body{
           box-sizing: border-box;
           margin: 0;

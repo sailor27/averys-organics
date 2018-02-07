@@ -5,7 +5,7 @@ function TourDate(props) {
 
   return(
     <div style={{marginLeft: '50px'}}>
-      <h2>{props.day}</h2>
+      <h2 style={{color: '#008F59'}}>{props.day}</h2>
       <ul style={{listStyle: 'none'}}>
         <li>Location: {props.location}</li>
         <li>Hours: {props.hours}</li>
